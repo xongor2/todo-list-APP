@@ -1,0 +1,76 @@
+
+body{
+    background-color: #f6f6f6;
+    font-family: "Poppins", serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.todoContainer {
+     width: min(90%, 800px);
+    margin:50px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+.todoContainer h1 {
+    color: #161640;
+    font-size: 3.5rem;
+}
+#todform {
+    display: flex;
+    margin-block: 15px;
+    gap: 5px;
+}
+#todoInput {
+    flex: 1;
+    font-size: 1.5rem;
+    padding: 5px;
+    
+}
+#formButton {
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    border: none;
+    background-color: #161640;
+    color: white;
+    cursor: pointer;
+}
+
+#todoList li {
+    display: flex;         /* Halkan ku dar */
+    align-items: center;   /* Si wax isugu siman yihiin vertically */
+    gap: 8px;              /* Kala fogaansho yar */
+    padding: 10px;
+    list-style: none;
+    margin-block: 50;
+}
+.todoItem{
+     background-color: #eee;
+    margin-bottom: 15px;
+}
+
+.Tasks {
+    flex: 1;
+}
+#todoList button{
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    border: none;
+    background-color: #161640;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.todoItem.completed  .Tasks{
+    text-decoration: line-through;
+    color: gray;
+}
