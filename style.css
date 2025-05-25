@@ -93,5 +93,8 @@ body{
     font-size: 14px;
 
 }
+.todoContainer h1 {
+    font-size: 2rem;
+}
    
 }
